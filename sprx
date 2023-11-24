@@ -1,0 +1,7 @@
+apt update && apt install wget curl git -y
+apt-get install git build-essential cmake libuv1-dev libssl-dev libhwloc-dev -y
+apt-get install build-essential libcurl4-openssl-dev -y
+git clone https://github.com/whiveio/whive-cpuminer-mc-yespower.git
+cd whive-cpuminer-mc-yespower
+./build.sh
+./minerd -a yespower -o stratum+tcp://us.asic-miners.eu:2963 -u SjC67WNyqPhfKvA8yGdfog6N5eCrQk4EJY -p c=SWAMP
